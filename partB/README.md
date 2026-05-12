@@ -1,18 +1,32 @@
-# Mini Library Management System — Part B
+# Mini Library Management System — Part A
 
-## Тойм
-Java-д суурилсан жижиг номын сангийн удирдлагын систем.
-Maven ашиглан build хийгдсэн, layered architecture дагасан.
+## Төслийн тойм
+Номын сангийн удирдлагын жижиг систем.
+Ном, гишүүн, зээлийн бүртгэлийг хялбархан удирдах зорилготой.
 
-## Технологи
+## Сонгосон технологи
 - Java 21
 - Maven 3.x
 - JUnit Jupiter 5.10.0
+- In-memory storage (Java List)
 
-## Бүтэц
+## Feature-үүд
+1. **Ном удирдлага** — нэмэх, хайх (гарчиг, зохиолч), устгах
+2. **Гишүүн удирдлага** — бүртгэх, харах, устгах
+3. **Зээл удирдлага** — ном зээлэх, буцаах, идэвхтэй зээл харах
+4. **Хугацаа хэтэрсэн зээл** — overdue зээлийн жагсаалт
 
-## Тест үр дүн
-- BookServiceTest: 12 тест
-- LoanServiceTest: 8 тест
-- MemberServiceTest: 9 тест
-- **Нийт: 29 тест, бүгд pass**
+## Архитектур
+Layered Architecture дагасан:
+- **Model layer** — өгөгдлийн бүтэц
+- **Repository layer** — өгөгдөл хадгалах
+- **Service layer** — бизнес логик
+
+## Build & Run
+
+### Шаардлага
+- Java 21+
+- Maven 3.x
+
+### Build хийх
+```bash
