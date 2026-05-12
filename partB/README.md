@@ -10,3 +10,9 @@ Maven ашиглан build хийгдсэн, layered architecture дагасан
 - JUnit Jupiter 5.10.0
 
 ## Бүтэц
+
+## Тест үр дүн
+- BookServiceTest: 12 тест
+- LoanServiceTest: 8 тест
+- MemberServiceTest: 9 тест
+- **Нийт: 29 тест, бүгд pass**
